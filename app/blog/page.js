@@ -137,7 +137,7 @@ export default function Blog() {
                                 </div>
                                 <Link
                                     href={`/blogpost/${post.slug}`}
-                                    className="font-medium border border-gray-400 dark:border-gray-600  text-sm bg-blue-50 dark:bg-indigo-900/20 light:bg-black px-3 py-1.5 rounded-full hover:bg-indigo-100 dark:hover:bg-indigo-800 transition cursor-pointer text-blck" 
+                                    className="font-medium border border-gray-400 dark:border-gray-600  text-sm bg-blue-50 dark:bg-indigo-900/20 light:bg-black px-3 py-1.5 rounded-full hover:bg-indigo-100 dark:hover:bg-indigo-800 transition cursor-pointer text-blck"
                                 >
                                     Read →
                                 </Link>

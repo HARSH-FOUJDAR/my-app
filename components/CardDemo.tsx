@@ -29,7 +29,7 @@ export function CardDemo() {
 
                     <CardDescription>
                         Don't have an account?{" "}
-                        <Link href="#" className=" underline text-green-400 hover:underline font-medium text-[1.2rem]">
+                        <Link href="#" className=" underline text-green-400 hover:underline font-medium text-[1rem] ml-2">
                             SingUp
                         </Link>
                     </CardDescription>
@@ -46,8 +46,8 @@ export function CardDemo() {
                         <div className="space-y-2">
                             <Label htmlFor="password">Password...</Label>
                             <Input id="password"
-                             type="password" required 
-                             name="password"/>
+                                type="password" required
+                                name="password" />
                         </div>
 
                         {/* Remember + Forgot */}
