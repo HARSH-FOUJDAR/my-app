@@ -29,7 +29,7 @@ export function CardDemo() {
 
                     <CardDescription>
                         Don't have an account?{" "}
-                        <Link href="#" className=" underline text-green-400 hover:underline font-medium text-[1rem] ml-2">
+                        <Link href="/Singup" className=" underline text-green-400 hover:underline font-medium text-[1rem] ml-2">
                             SingUp
                         </Link>
                     </CardDescription>

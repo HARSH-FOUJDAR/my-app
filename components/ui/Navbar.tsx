@@ -1,19 +1,9 @@
 "use client";
-
 import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, User2 } from "lucide-react";
 import { ModeToggle } from "../dropdown-menu";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import {
   Sheet,
   SheetContent,
@@ -75,7 +65,9 @@ export default function Navbar() {
 
             <DropdownMenuContent align="end" className="w-48">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <Link href="/Profile">
               <DropdownMenuItem className="cursor-pointer">Profile</DropdownMenuItem>
+              </Link>
               <DropdownMenuItem className="cursor-pointer">Settings</DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer">Support</DropdownMenuItem>
               <DropdownMenuSeparator />
@@ -87,9 +79,9 @@ export default function Navbar() {
               Login
             </Button>
           </Link>
-
-          <Button size="sm" className="cursor-pointer">Sign Up</Button>
-
+          <Link href="/singup">
+            <Button size="sm" className="cursor-pointer">Sign Up</Button>
+          </Link>
         </div>
 
         {/* Mobile Section */}
@@ -124,10 +116,10 @@ export default function Navbar() {
               ))}
 
               <div className="flex flex-col gap-3 mt-8">
-                 <Link href="/login">
-                <Button className="cursor-pointer justify-center w-full py-2" onClick={() => setOpen(false)}>
-                  Login
-                </Button>
+                <Link href="/login">
+                  <Button className="cursor-pointer justify-center w-full py-2" onClick={() => setOpen(false)}>
+                    Login
+                  </Button>
                 </Link>
                 <Button className="cursor-pointer " onClick={() => setOpen(false)}>
                   Sign Up
